@@ -1,0 +1,54 @@
+<!DOCTYPE html>              <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br">          <!-- Define o idioma -->
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Define a configuração de visualização em dispositivos móveis -->
+    <title>Contato</title>  <!-- Define o título da página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Liga o arquivo CSS ao HTML -->
+</head>
+<body class="contato-page"> <!-- Define a classe CSS do corpo da página como 'contato-page' -->
+
+    <header>
+        <h1>Univale</h1>    <!-- Define o título do cabeçalho -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>        <!-- Cria um link para a página inicial -->
+                <li><a href="masculino.html">Masculino</a></li> <!-- Cria um link para a página masculino.html -->
+                <li><a href="feminino.html">Feminino</a></li>   <!-- Cria um link para a página feminino.html -->
+                <li><a href="infantil.html">Infantil</a></li>   <!-- Cria um link para a página infantil.html -->
+                <li><a href="contato.html">Contato</a></li>     <!-- Cria um link para a própria página (contato.html) -->
+            </ul>
+        </nav>
+        <button class="account-btn">Entrar na Conta</button>    <!-- Cria um botão -->
+    </header>
+
+    <section id="informacoes-contato">
+        <h2>Informações de Contato</h2>                         
+        <p>Endereço: Avenida Brasil, 500</p>                    
+        <p>Cidade: Ivaiporã - PR</p>                           
+        <p>Telefone: (43) 3472-1211</p>                         
+        <p>Email: unvivalefaculdade@gmail.com</p>                
+        <p>Horário de Funcionamento: Segunda a Sexta, 9h às 18h</p> 
+    </section>
+
+    <section id="formulario-contato">
+        <h2>Formulário de Contato</h2>                      <!-- Define o título -->
+        <form action="#" method="post">                     <!-- Cria um formulário com método de envio POST -->
+            <label for="nome">Nome:</label>                 <!-- Rótulo do campo de entrada de nome -->
+            <input type="text" id="nome" name="nome" required>      <!-- input para o nome -->
+
+            <label for="email">Email:</label>               <!-- Rótulo do campo de entrada de email -->
+            <input type="email" id="email" name="email" required>   <!-- input para o email -->
+
+            <label for="mensagem">Mensagem:</label>          <!-- Rótulo do campo de entrada de mensagem -->
+            <textarea id="mensagem" name="mensagem" required></textarea>    <!-- Mensagem de texto obrigatória -->
+
+            <input type="submit" value="Enviar">               <!-- Botão de envio -->
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja de Confecção e Calçados</p>    <!-- Rodapé  -->
+    </footer>
+</body>
+</html>

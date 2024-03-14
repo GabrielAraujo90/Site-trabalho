@@ -1,0 +1,237 @@
+
+body {
+    font-family: monospace, sans-serif; /* Define a fonte para todo o body do documento */
+    padding: 0;                         /* Remove todo o preenchimento padrão do body */
+    margin: 0;                          /* Remove toda a margem padrão do body */
+    min-height: 100vh;                  /* Define a altura mínima do body como 100% da altura da janela de visualização */
+    position: relative;                 /* Define a posição do body como relativa */
+    background-color: #ffffff;        /* Define a cor de fundo do body como branco */
+}
+
+header {
+    display: flex;      /* Define a exibição do cabeçalho como flexível */
+    align-items: center; /* Alinha os itens do cabeçalho */
+    background-color: #464545; /* Define a cor de fundo do cabeçalho */
+    padding: 10px 20px; /* Adiciona preenchimento interno ao cabeçalho */
+}
+
+h1 {
+    background-color: #464545;  /* Define a cor de fundo do título */
+    color: white;   /* Define a cor do texto do título como branco */
+    margin: 0;        /* Remove toda a margem em torno do título para evitar espaços indesejados */
+    padding: 10px;    /* Adiciona preenchimento interno ao título */
+}
+
+
+nav {
+    flex-grow: 1;       /* Define a expansão flexível da navegação para preencher o espaço disponível */
+    text-align: center; /* Alinha o texto dentro da navegação ao centro */
+    background-color: #464545; /* Define a cor de fundo da navegação */
+    text-emphasis-color: white; /* Define a cor do texto de destaque como branco */
+    margin: 0;  /* Remove a margem ao redor da navegação */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0;       /* Remove o preenchimento padrão da lista */
+}
+
+nav ul li {
+    display: inline-block; /* Exibe os itens da lista de navegação em linha */
+    margin-right: 20px;    /* Adiciona margem à direita entre os itens da lista de navegação */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove a margem à direita do último item da lista de navegação */
+}
+
+nav ul li a {
+    color: #fff; /* Define a cor do texto dos links como branco */
+    text-decoration: underline; /* Adiciona sublinhado aos links */
+}
+
+
+.account-btn {
+    background-color: #f70606; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Adiciona preenchimento interno ao botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
+    border-radius: 10px; /* Adiciona borda arredondada ao botão */
+    cursor: pointer; /* Define o cursor do mouse como apontador ao passar sobre o botão */
+}
+
+
+/* Estilos para os anúncios */
+
+#anuncios {
+    padding: 100px; /* Adiciona preenchimento ao redor dos anúncios */
+    display: flex; /* Define a exibição dos anúncios como flexível para melhor controle do layout */
+    flex-wrap: wrap; /* Permite que os anúncios quebrem para a próxima linha se não couberem */
+    justify-content: space-between; /* Distribui uniformemente os anúncios na horizontal */
+    background-color: white; /* Define a cor de fundo dos anúncios como branco */
+    margin-left: 200px; /* Adiciona margem à esquerda dos anúncios */
+}
+
+.anuncio {
+    width: calc(33.33% - 20px); /* Define a largura dos anúncios */
+    box-sizing: border-box; /* Garante que a largura inclua preenchimento e borda */
+    background-color: whitesmoke; /* Define a cor de fundo dos anúncios */
+    margin-bottom: 20px; /* Adiciona margem inferior aos anúncios */
+}
+
+.anuncio img {
+    max-width: 100%; /* Garante que a imagem dos anúncios não ultrapasse a largura do contêiner */
+}
+
+.anuncio p {
+    margin-top: 10px; /* Adiciona margem superior aos parágrafos dos anúncios */
+    font-size: 16px; /* Define o tamanho da fonte dos parágrafos dos anúncios */
+}
+
+.anuncio:nth-child(3n) {
+    margin-right: 0; /* Remove a margem à direita para cada terceiro anúncio */
+    margin-bottom: 20px; /* Adiciona margem inferior mesmo para os últimos anúncios */
+}
+
+
+
+/* Estilos para o footer */
+
+.footer {
+    background-color: #dd0505; /* Define a cor de fundo do rodapé */
+    color: white; /* Define a cor do texto do rodapé como branco */
+    text-align: center; /* Alinha o texto do rodapé ao centro */
+    padding: 10px; /* Adiciona preenchimento ao redor do rodapé */
+    width: 99%; /* Define a largura do rodapé como 99% */
+    margin: 0; /* Remove a margem ao redor do rodapé */
+}
+
+
+
+
+/* PAGINA DE CONTATO */
+
+header h1 {
+    font-size: 36px; /* Define o tamanho da fonte do título dentro do cabeçalho */
+    text-transform: uppercase; /* Transforma o texto do título em maiúsculas */
+}
+
+section {
+    padding: 20px; /* Adiciona preenchimento ao redor da seção */
+    margin: 20px; /* Adiciona margem ao redor da seção */
+    background-color: #ffffff; /* Define a cor de fundo da seção como branco */
+    border-radius: 10px; /* Adiciona borda arredondada à seção */
+}
+
+h2 {
+    font-size: 24px; /* Define o tamanho da fonte dos subtítulos */
+    margin-bottom: 10px; /* Adiciona margem inferior aos subtítulos */
+}
+
+label {
+    display: block; /* Define os rótulos como elementos de bloco */
+    margin-bottom: 5px; /* Adiciona margem inferior aos rótulos */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Define a largura dos campos de entrada como 100% */
+    padding: 10px; /* Adiciona preenchimento interno aos campos de entrada */
+    margin-bottom: 10px; /* Adiciona margem inferior aos campos de entrada */
+    border: 1px solid #ccc; /* Adiciona uma borda de 1px sólida com cor cinza aos campos de entrada */
+    border-radius: 5px; /* Adiciona borda arredondada aos campos de entrada */
+}
+
+input[type="submit"] {
+    background-color: #4f504e; /* Define a cor de fundo do botão de envio */
+    color: #fff; /* Define a cor do texto do botão de envio como branco */
+    border: none; /* Remove a borda do botão de envio */
+    padding: 10px 20px; /* Adiciona preenchimento interno ao botão de envio */
+    border-radius: 5px; /* Adiciona borda arredondada ao botão de envio */
+    cursor: pointer; /* Define o cursor do mouse como apontador ao passar sobre o botão de envio */
+}
+
+input[type="submit"]:hover {
+    background-color: #363836; /* Define a cor de fundo do botão de envio ao passar o mouse sobre ele */
+}
+
+footer {
+    background-color: #dd0505; /* Define a cor de fundo do rodapé */
+    color: white; /* Define a cor do texto do rodapé como branco */
+    text-align: center; /* Alinha o texto do rodapé ao centro */
+    padding: 20px; /* Adiciona preenchimento ao redor do rodapé */
+    width: 99%; /* Define a largura do rodapé como 99% */
+}
+
+
+/* Estilos para o nav apenas na página de contato */
+
+.contato-page nav {
+    background-color: #4f504e; /* Define a cor de fundo da navegação apenas na página de contato */
+    flex-grow: 1; /* Define a expansão flexível do elemento de navegação para preencher o espaço disponível */
+    text-align: center; /* Alinha o texto dentro da navegação ao centro */
+    background-color: #464545; /* Define a cor de fundo da navegação como #464545 */
+    text-emphasis-color: white; /* Define a cor do texto de destaque como branco */
+    margin-right: 0px; /* Define a margem à direita da navegação como 0 pixels */
+}
+
+
+/* Estilos para o menu de navegação */
+
+.nav-menu {
+    flex-grow: 1; /* Define a expansão flexível do elemento de menu para preencher o espaço disponível */
+    text-align: center; /* Alinha o texto dentro do menu ao centro */
+    background-color: white; /* Define a cor de fundo do menu como branco */
+    text-emphasis-color: white; /* Define a cor do texto de destaque como branco */
+    margin: 30px; /* Adiciona margem ao redor do menu */
+}
+
+.nav-menu {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0; /* Remove o preenchimento padrão do menu */
+}
+
+.nav-menu ul li {
+    display: inline-block; /* Exibe os itens da lista de menu em linha */
+    margin-right: 20px; /* Adiciona margem à direita entre os itens da lista de menu */
+}
+
+.nav-menu li:last-child {
+    margin-right: 0; /* Remove a margem à direita do último item da lista de menu */
+}
+
+.nav-menu ul li a {
+    color: black; /* Define a cor do texto dos links como preto */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+
+/* Estilos para o menu de tamanhos e o menu de tipos de roupas */
+
+.sizes-menu,
+.clothing-menu {
+    margin-right: 20px; /* Adiciona margem à direita entre os menus de tamanhos e tipos de roupas */
+}
+
+.sizes-menu label,
+.clothing-menu label,
+.colors-menu label {
+    color: black; /* Define a cor do texto dos rótulos dos menus como preto */
+    margin-right: 5px; /* Adiciona margem à direita entre os rótulos dos menus */
+}
+
+.sizes-menu select,
+.clothing-menu select,
+.colors-menu select {
+    padding: 8px; /* Adiciona preenchimento interno aos menus */
+    border-radius: 5px; /* Adiciona borda arredondada aos menus */
+    border: 1px solid black; /* Adiciona uma borda de 1px sólida com cor preta aos menus */
+}
+
+.sizes-menu select:focus,
+.clothing-menu select:focus {
+    outline: none; /* Remove o contorno ao focar nos menus */
+    border-color: black; /* Define a cor da borda ao focar nos menus como preto */
+}

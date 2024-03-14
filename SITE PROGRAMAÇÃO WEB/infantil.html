@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetWalk</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <style>
+        
+        nav {
+            display: flex; 
+            justify-content: center; 
+        }
+    
+       
+        .clothing-menu,
+        .sizes-menu,
+        .colors-menu {
+            margin: 0 10px; 
+        }
+    
+        
+        select {
+            width: 100%; 
+        }
+    </style> 
+    
+</head>
+<body>
+    <header>
+        
+        <h1>Univale</h1> 
+        <nav>
+            
+            <ul>
+                
+                <li><a href="index.html">Início</a></li> 
+                <li><a href="masculino.html">Masculino</a></li> 
+                <li><a href="feminino.html">Feminino</a></li> 
+                <li><a href="infantil.html">Infantil</a></li> 
+                <li><a href="contato.html">Contato</a></li> 
+            </ul>
+        </nav>
+      
+        
+        <button class="account-btn">Entrar na Conta</button>
+    </header>
+    
+    
+    <nav class="nav-menu">
+       
+        <div class="clothing-menu">
+            <label for="clothing">Tipos de Roupas:</label> 
+            <select id="clothing">
+                <option value="calcados">Calçados</option>
+                <option value="camisetas">Camisetas</option>
+                <option value="blusas">Blusas</option>
+                <option value="jaquetas">Jaquetas</option>
+                <option value="meias">Meias</option>
+            </select>
+        </div> 
+        
+      
+        <div class="sizes-menu">
+            <label for="sizes">Idades:</label> 
+            <select id="sizes">
+                <option value="P">0 - 3</option>
+                <option value="M">3 - 6</option>
+                <option value="G">6 - 10</option>
+            </select>
+        </div>
+        
+      
+        <div class="colors-menu">
+            <label for="colors">Cores:</label> 
+            <select id="colors">
+                
+                <option value="Azul">Azul</option> 
+                <option value="Amarelo">Amarelo</option>
+                <option value="Vermelho">Vermelho</option>
+            </select>
+        </div>
+        
+    </nav>
+    
+    <section id="anuncios">      
+        
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/02618015.jpg"style="border: 1px solid black">
+            <p>Camiseta Nike França Futura Infantil </p>
+            <p><strike>De R$ 299,00</strike> Por R$ 99,00 </p>
+            
+        </div>
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/024078NX.jpg" style="border: 1px solid black">
+            <p>Chuteira Nike Mercurial Vapor Infantil</p>
+            <p><strike>De R$ 599,00</strike> Por R$ 259,00</p>
+        </div>
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/02509951.jpg" style="border: 1px solid black">
+            <p>Camiseta Nike Liverpool Infantil</p>
+            <p>R$ 150,00</p>
+        </div>
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/027085NM.jpg" style="border: 1px solid black">
+            <p>Chapéu Nike Futura Infantil</p>
+            <p><strike>De R$ 199,00</strike> Por R$ 49,00</p>
+        </div>
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/006307O6.jpg" style="border: 1px solid black">
+            <p>Mochila Nike Classic Infantil</p>
+            <p><strike>De R$ 199,00</strike> Por R$ 159,00</p>
+        </div>
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/027633ID.jpg" style="border: 1px solid black">
+            <p>Luva Infantil Futebol</p>
+            <p><strike>De R$ 99,00</strike> Por R$ 49,00</p>
+        </div>
+      
+        
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Minha Loja de Confecção e Calçados</p>
+    </footer>
+
+    <script>
+        
+        function irParaInicio() {
+            window.location.href = "index.html";
+        }
+
+        
+        function irParaMasculino() {
+            window.location.href = "masculino.html";
+        }
+
+        
+        function irParaFeminino() {
+            window.location.href = "feminino.html";
+        }
+
+        
+        function irParaInfantil() {
+            window.location.href = "infantil.html";
+        }
+
+        
+        function irParaContato() {
+            window.location.href = "contato.html";
+        }
+
+       
+        document.querySelector("nav ul li:nth-child(1) a").addEventListener("click", irParaInicio);
+        document.querySelector("nav ul li:nth-child(2) a").addEventListener("click", irParaMasculino);
+        document.querySelector("nav ul li:nth-child(3) a").addEventListener("click", irParaFeminino);
+        document.querySelector("nav ul li:nth-child(4) a").addEventListener("click", irParaInfantil);
+        document.querySelector("nav ul li:nth-child(5) a").addEventListener("click", irParaContato);
+    </script>
+</body>
+</html>

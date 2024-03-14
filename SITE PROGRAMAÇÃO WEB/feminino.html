@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>StreetWalk</title> 
+    <link rel="stylesheet" href="styles.css">
+   
+   <style> 
+        nav{                    /*<!-- Define o estilo para elementos <nav> --> */
+            display: flex;      /*<!-- Define a exibição como flexível -->*/
+            justify-content: center;    /*<!-- Centraliza o conteúdo horizontalmente -->*/
+        }
+    
+        .clothing-menu,     /*<!-- Define o estilo para a classe .clothing-menu -->*/
+        .sizes-menu,        /*<!-- Define o estilo para a classe .sizes-menu -->*/
+        .colors-menu {      /*<!-- Define o estilo para a classe .colors-menu -->*/
+            margin: 0 10px; /* Define a margem entre os menus */
+        }
+    
+        select {            /*<!-- Define o estilo para elementos <select> -->*/
+            width: 100%;    /*<!-- Define a largura como 100% -->*/
+        }
+    </style> 
+</head>     <!-- Fim da seção de cabeçalho -->
+
+<body>       <!-- Início da seção de corpo do documento -->
+    <header> <!-- Início da seção de cabeçalho -->
+        <h1>Univale</h1> <!-- Título  -->
+        <nav> <!-- Início da navegação -->
+            <ul> <!-- Lista não ordenada -->
+                <li><a href="index.html">Início</a></li> <!-- Link para a página inicial -->
+                <li><a href="masculino.html">Masculino</a></li> <!-- Link para a página masculino -->
+                <li><a href="feminino.html">Feminino</a></li> <!-- Link para a página feminino -->
+                <li><a href="infantil.html">Infantil</a></li> <!-- Link para a página infantil -->
+                <li><a href="contato.html">Contato</a></li>  <!-- Link para a página de contato -->
+            </ul>
+        </nav>
+      
+        <button class="account-btn">Entrar na Conta</button>    <!-- Botão para entrar na conta -->
+    </header>   <!-- Fim da seção de cabeçalho -->
+
+    <nav class="nav-menu">                  <!-- Navegação secundária -->
+        <div class="clothing-menu">         <!-- Menu para tipos de roupas -->
+            <label for="clothing">Tipos de Roupas:</label> <!-- Titulo para o menu de tipos de roupas -->
+            <select id="clothing">          <!-- Menu de tipos de roupas -->
+                <option value="calcados">Calçados</option>     <!-- Opção para calçados -->
+                <option value="camisetas">Camisetas</option>   
+                <option value="blusas">Blusas</option> 
+                <option value="jaquetas">Jaquetas</option> 
+                <option value="meias">Meias</option> 
+            </select>
+        </div> 
+
+        <div class="sizes-menu">     <!-- Menu de tamanhos -->
+            <label for="sizes">Tamanhos:</label>   <!-- Titulo para o menu de tamanhos -->
+            <select id="sizes">     <!-- Menu de tamanhos -->
+                <option value="P">P</option> <!-- Opções para tamanhos -->
+                <option value="M">M</option> 
+                <option value="G">G</option> 
+            </select>
+        </div>
+
+        <div class="colors-menu">               <!-- Menu para cores -->
+            <label for="colors">Cores:</label>  <!-- Rótulo para o menu de cores -->
+            <select id="colors">                <!-- Menu de cores -->
+                <option value="Azul">Azul</option>  <!-- Opções de cores -->
+                <option value="Amarelo">Amarelo</option> 
+                <option value="Vermelho">Vermelho</option> 
+            </select>
+        </div>
+        
+    </nav> 
+
+    
+    
+  
+    <section id="anuncios">     <!-- Anuncios --> 
+    
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/014749MT.jpg"style="border: 1px solid black">
+            <p>Vestido Nike Sportswear Essential </p>
+            <p><strike>De R$ 399,00</strike> Por R$ 299,00 </p>
+            
+        </div>
+
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/024910MT.jpg" style="border: 1px solid black">
+            <p>Saia Nike Dri-FIT Advantage</p>
+            R$ 129,00</p>
+        </div>
+
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/024589MT.jpg" style="border: 1px solid black">
+            <p>Vestido Nike Sportswear Gingham</p>
+            <p><strike>De R$ 199,00</strike> Por R$ 99,00</p>
+        </div>
+
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/012668A1.jpg" style="border: 1px solid black">
+            <p>Camiseta Nike Corinthians Feminina</p>
+            <p><strike>De R$ 159,00</strike> Por R$ 89,00</p>
+        </div>
+
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/026616P1.jpg" style="border: 1px solid black">
+            <p>Viseira Nike Dri-FIT Ace Swoosh</p>
+            <p><strike>De R$ 199,00</strike> Por R$ 99,00</p>
+        </div>
+
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/0281183X.jpg" style="border: 1px solid black">
+            <p>Tênis Nike Air Max SC Feminino</p>
+            <p>R$ 899,00</p>
+        </div>   
+    </section> 
+
+    <footer class="footer"> <!-- Rodapé -->
+        <p>&copy; 2024 Minha Loja de Confecção e Calçados</p> 
+    </footer> 
+    
+    <script> // script em JavaScript 
+        
+        // Função para redirecionar a página 
+        function irParaInicio() {
+            window.location.href = "index.html";
+        }
+    
+        
+        function irParaMasculino() {
+            window.location.href = "masculino.html";
+        }
+    
+        
+        function irParaFeminino() {
+            window.location.href = "feminino.html";
+        }
+    
+        
+        function irParaInfantil() {
+            window.location.href = "infantil.html";
+        }
+    
+        
+        function irParaContato() {
+            window.location.href = "contato.html";
+        }
+    
+        // Colocar cliques nos botões
+        document.querySelector("nav ul li:nth-child(1) a").addEventListener("click", irParaInicio);
+        document.querySelector("nav ul li:nth-child(2) a").addEventListener("click", irParaMasculino);
+        document.querySelector("nav ul li:nth-child(3) a").addEventListener("click", irParaFeminino);
+        document.querySelector("nav ul li:nth-child(4) a").addEventListener("click", irParaInfantil);
+        document.querySelector("nav ul li:nth-child(5) a").addEventListener("click", irParaContato);
+    </script> 
+    
+    </body> 
+    </html> 
+    

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetWalk</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <style>
+       
+        nav{
+            display: flex; 
+            justify-content: center; 
+        }
+    
+        
+        .clothing-menu,
+        .sizes-menu,
+        .colors-menu {
+            margin: 0 10px; 
+        }
+    
+        
+        select {
+            width: 100%; 
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        
+        <h1>Univale</h1> 
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Início</a></li> 
+                <li><a href="masculino.html">Masculino</a></li> 
+                <li><a href="feminino.html">Feminino</a></li> 
+                <li><a href="infantil.html">Infantil</a></li> 
+                <li><a href="contato.html">Contato</a></li> 
+            </ul>
+        </nav>
+      
+        
+        <button class="account-btn">Entrar na Conta</button>
+    </header>
+    
+    
+    <nav class="nav-menu">
+       
+        <div class="clothing-menu">
+            <label for="clothing">Tipos de Roupas:</label> 
+            <select id="clothing">
+                <option value="calcados">Calçados</option>
+                <option value="camisetas">Camisetas</option>
+                <option value="blusas">Blusas</option>
+                <option value="jaquetas">Jaquetas</option>
+                <option value="meias">Meias</option>
+            </select>
+        </div> 
+        
+        
+        <div class="sizes-menu">
+            <label for="sizes">Tamanhos:</label> 
+            <select id="sizes">
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+            </select>
+        </div>
+        
+        
+        <div class="colors-menu">
+            <label for="colors">Cores:</label> 
+            <select id="colors">
+                <option value="Azul">Azul</option> 
+                <option value="Amarelo">Amarelo</option>
+                <option value="Vermelho">Vermelho</option>
+            </select>
+        </div>
+        
+    </nav>
+
+    
+    
+  
+    <section id="anuncios">      
+    
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/02791851.jpg"style="border: 1px solid black">
+            <p>Tênis Nike Air Force 1 </p>
+            <p><strike>De R$ 899,00</strike> Por R$ 399,00 </p>
+            
+        </div>
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/02523915.jpg" style="border: 1px solid black">
+            <p>Camiseta OKC NBA</p>
+            <p><strike>De R$ 499,00</strike> Por R$ 299,00</p>
+        </div>
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/025113ID.jpg" style="border: 1px solid black">
+            <p>Camiseta Nike Liverpool Swoosh Masculina</p>
+            <p><strike>De R$ 199,00</strike> Por R$ 89,00</p>
+        </div>
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/012668A1.jpg" style="border: 1px solid black">
+            <p>Camiseta Nike Corinthians Feminina</p>
+            <p><strike>De R$ 159,00</strike> Por R$ 89,00</p>
+        </div>
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/0228197T.jpg" style="border: 1px solid black">
+            <p>Camiseta Nike masculina</p>
+            <p><strike>De R$ 199,00</strike> Por R$ 99,00</p>
+        </div>
+        <div class="anuncio">
+            <img src="https://imgnike-a.akamaihd.net/360x360/016622IM.jpg" style="border: 1px solid black">
+            <p>Nike SB Dunk Low Pro</p>
+            <p><strike>De R$ 999,00</strike> Por R$ 399,00</p>
+        </div>
+        
+    </section>
+    <footer class="footer">
+        
+        <p>&copy; 2024 Minha Loja de Confecção e Calçados</p> 
+    </footer>
+    
+    <script>
+       
+        function irParaInicio() {
+            window.location.href = "index.html";
+        }
+
+        
+        function irParaMasculino() {
+            window.location.href = "masculino.html";
+        }
+
+        
+        function irParaFeminino() {
+            window.location.href = "feminino.html";
+        }
+
+        
+        function irParaInfantil() {
+            window.location.href = "infantil.html";
+        }
+
+        
+        function irParaContato() {
+            window.location.href = "contato.html";
+        }
+
+        document.querySelector("nav ul li:nth-child(1) a").addEventListener("click", irParaInicio);
+        document.querySelector("nav ul li:nth-child(2) a").addEventListener("click", irParaMasculino);
+        document.querySelector("nav ul li:nth-child(3) a").addEventListener("click", irParaFeminino);
+        document.querySelector("nav ul li:nth-child(4) a").addEventListener("click", irParaInfantil);
+        document.querySelector("nav ul li:nth-child(5) a").addEventListener("click", irParaContato);
+    </script>
+</body>
+</html>
